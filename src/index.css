@@ -1,0 +1,7 @@
+/*
+  Tailwind CSS v4.
+  "theme(static)" hace que estén disponibles todas las variables de Tailwind
+  (colores, espaciado, radios, textos), aunque no se usen como clase,
+  para que la página "Tailwind" pueda enseñarlas todas.
+*/
+@import "tailwindcss" theme(static);
