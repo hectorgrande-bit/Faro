@@ -21,11 +21,11 @@ export type ButtonProps = ComponentProps<'button'> & {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    'bg-violet-700 text-white hover:bg-violet-800 active:bg-violet-900 focus-visible:outline-violet-700',
+    'bg-violet-800 text-white hover:bg-violet-900 active:bg-violet-950 focus-visible:outline-violet-800',
   secondary:
-    'bg-white text-gray-900 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 active:bg-gray-100 focus-visible:outline-violet-700',
+    'bg-white text-gray-900 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 active:bg-gray-100 focus-visible:outline-violet-800',
   ghost:
-    'bg-transparent text-gray-700 hover:bg-gray-100 active:bg-gray-200 focus-visible:outline-violet-700',
+    'bg-transparent text-gray-700 hover:bg-gray-100 active:bg-gray-200 focus-visible:outline-violet-800',
   danger:
     'bg-red-700 text-white hover:bg-red-800 active:bg-red-900 focus-visible:outline-red-700',
 }

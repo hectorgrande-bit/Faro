@@ -75,7 +75,7 @@ export function Input({
             'w-full rounded-lg bg-white text-gray-900 ring-1 ring-inset transition-shadow placeholder:text-gray-400',
             'focus:ring-2 focus:outline-none',
             'disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500',
-            error ? 'ring-red-500 focus:ring-red-500' : 'ring-gray-300 focus:ring-violet-600',
+            error ? 'ring-red-500 focus:ring-red-500' : 'ring-gray-300 focus:ring-violet-800',
             sizeClasses[size],
             Icon ? paddingClasses[size].withIcon : paddingClasses[size].normal,
           ].join(' ')}
