@@ -21,19 +21,19 @@ export type ButtonProps = ComponentProps<'button'> & {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    'bg-violet-600 text-white hover:bg-violet-700 active:bg-violet-800 focus-visible:outline-violet-600',
+    'bg-violet-700 text-white hover:bg-violet-800 active:bg-violet-900 focus-visible:outline-violet-700',
   secondary:
-    'bg-white text-gray-900 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 active:bg-gray-100 focus-visible:outline-violet-600',
+    'bg-white text-gray-900 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 active:bg-gray-100 focus-visible:outline-violet-700',
   ghost:
-    'bg-transparent text-gray-700 hover:bg-gray-100 active:bg-gray-200 focus-visible:outline-violet-600',
+    'bg-transparent text-gray-700 hover:bg-gray-100 active:bg-gray-200 focus-visible:outline-violet-700',
   danger:
-    'bg-red-600 text-white hover:bg-red-700 active:bg-red-800 focus-visible:outline-red-600',
+    'bg-red-700 text-white hover:bg-red-800 active:bg-red-900 focus-visible:outline-red-700',
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
-  sm: 'h-8 gap-1.5 px-3 text-sm',
-  md: 'h-10 gap-2 px-4 text-sm',
-  lg: 'h-12 gap-2 px-5 text-base',
+  sm: 'h-8 gap-1.5 px-3.5 text-sm',
+  md: 'h-10 gap-2 px-5 text-sm',
+  lg: 'h-12 gap-2 px-6 text-base',
 }
 
 const iconSizes: Record<ButtonSize, number> = { sm: 16, md: 18, lg: 20 }
@@ -64,7 +64,7 @@ export function Button({
       disabled={disabled || loading}
       aria-busy={loading || undefined}
       className={[
-        'inline-flex shrink-0 items-center justify-center rounded-lg font-medium transition-colors',
+        'inline-flex shrink-0 items-center justify-center rounded-full font-medium transition-colors',
         'focus-visible:outline-2 focus-visible:outline-offset-2',
         'disabled:cursor-not-allowed disabled:opacity-50',
         variantClasses[variant],
