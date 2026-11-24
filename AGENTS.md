@@ -30,6 +30,9 @@ Los puertos son fijos: si el 6001 o el 6006 están ocupados, el comando da un er
 
 ## Dónde va cada cosa
 
+- `src/screens/`: las pantallas, una por archivo, con la pantalla exportada por defecto (`export default`). Aparecen solas en el menú de la app con el nombre del archivo, y cada una tiene su dirección: `src/screens/antes.tsx` se abre en http://localhost:6001/#/antes. Toda pantalla nueva va aquí y se construye con los componentes de `src/components/`.
+- `src/App.tsx`: el índice de la app. Muestra el menú de arriba y la página elegida. No hace falta tocarlo para añadir una pantalla.
+- `src/TailwindPage.tsx`: la página «Tailwind», con los valores que Tailwind trae por defecto (http://localhost:6001/#/tailwind). Es la que se abre si la dirección está vacía o no existe.
 - `src/components/`: los componentes, uno por archivo (`Button.tsx`), y su historia al lado (`Button.stories.tsx`). `src/components/index.ts` los exporta todos.
 - `docs/componentes.md`: la tabla de estado de los componentes. Es la **única fuente**: no copies su contenido en ningún otro sitio.
 - `src/stories/Status.mdx`: la página Status de Storybook. Solo lee `docs/componentes.md` y lo pinta; no escribas la tabla aquí.
